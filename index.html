@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/502646584c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header"><i class="fa-solid fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-person"></i> About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-content">
+                <div class="header-text">
+                    <p>IT Student</p>
+                    <h1>Hi, I'm <span>Trixcy</span><br>From GRC</h1>
+                </div>
+                <!-- Photo on the right side -->
+                <div class="header-photo">
+                    <img src="./images/trix 3.jpg" alt="Mark's Photo" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<!-- ---------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./images/grad.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm <strong>Trixcy B. Abejuela</strong>, I’m a creative soul with a passion for fashion—especially makeup. I love expressing myself through bold colors, unique styles, and artistic designs. Whether it’s experimenting with new makeup looks or finding inspiration in everyday beauty, I’m always excited to bring creativity to life. This portfolio is a glimpse into my world—where style meets imagination.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Soft Skills</span><br>Communication,
+                           <li> Creativity,</li>
+                           <li>Photo editing,</li>
+                           <li>Technology,</li>
+                           <li>Color Theory,</li>
+                           <li>Problem Solving,</li>
+                           <li>Planning and Organization,</li>
+                           <li>Collaboration Skills,</li>
+                           <li>Taking Criticism</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Information Technology</li>
+                        <li><span>2021</span><br>Information Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<!--------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+<hr>
+        <h1 class="sub-title">Me</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/trix 2.jpg">
+            </div>
+            <div class="work">
+                <img src="./trix 4.jpg">
+            </div>
+            <div class="work">
+                <img src="./images/trix 1.jpg">
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> Abejuelatrixcy@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 09919835101</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/potatotrixxx"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ftrixxoxo_%3Figsh%3DbGJkMmp6d2pxeDc2%26utm_source%3Dqr%26fbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBEwOFpMTG5xdVQzRDRRU0h2cQEe6uX9qRHwgAJiXZJ6tOovHxCZaasRVxcX198xM4XXmqr3dYHwBhasKTQLXx0_aem_EtzeHhFe_3VlyMtSl4QDtg&h=AT3Hpu_Jgz_z2LhJsfIqr-yfNy9_qEPj6pY1d7cY4tDLJAYaSk9iZgyK32PSFH_ZANx3cqzvNTdeq0fMMmK78r73LVuk76NyentwcDs1w9DqKzaUkjjai1Y_GxgGV2-USdy79Q"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv1.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
